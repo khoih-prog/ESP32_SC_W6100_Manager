@@ -1,0 +1,44 @@
+{
+  "name": "ESP32_SC_W6100_Manager",
+  "version": "1.0.0",
+  "keywords": "ethernet, WiFiManager, esp32, esp32-s2, esp32-s3, esp32-c3, lwip, w6100, lwip-w6100, lwip-ethernet, WebServer, Communication, Credentials, Config-Portal, DoubleReset, MultiReset, littlefs, spiffs, dns-server, iot, eeprom",
+  "description": "ESP32_S2/S3/C3 + LwIP W6100 Connection and Credentials Manager, with enhanced GUI and fallback Web ConfigPortal. This Library is used for configuring ESP32_S2/S3/C3 + LwIP W6100 Credentials Manager at runtime. You can also specify static DNS servers, personalized HostName, static or DHCP IP. With configurable CORS Header and auto-Timezone features. Now using correct ESP32 chipIP",
+  "authors":
+  {
+    "name":  "Khoi Hoang",
+    "url":   "https://github.com/khoih-prog",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/khoih-prog/ESP32_SC_W6100_Manager"
+  },
+  "homepage": "https://github.com/khoih-prog/ESP32_SC_W6100_Manager",
+  "export": {
+    "exclude": [
+      "linux",
+      "extras",
+      "tests"
+    ]
+  },
+  "dependencies": [
+    {
+      "owner": "khoih-prog",
+      "name": "WebServer_ESP32_SC_W6100",
+      "version": ">=1.2.1",
+      "platforms": ["espressif32"]
+    },
+    {
+      "owner": "khoih-prog",
+      "name": "ESP_DoubleResetDetector",
+      "version": ">=1.3.2",
+      "platforms": ["espressif32"]
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "*",
+  "platforms": ["espressif32"],
+  "examples": "examples/*/*/*.ino",
+  "headers": ["ESP32_SC_W6100_Manager.h", "ESP32_SC_W6100_Manager.hpp"]
+}
