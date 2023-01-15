@@ -86,7 +86,7 @@
   * [Custom IP Configuration](#custom-ip-configuration) 
     * [Custom Station (client) Static IP Configuration](#custom-station-client-static-ip-configuration)
   * [Custom HTML, CSS, Javascript](#custom-html-css-javascript) 
-* [How to connect W6100 to ESP32_S3](#How-to-connect-W6100-to-ESP32_S3)
+* [How to connect W6100 to ESP32_S2/S3/C3](#How-to-connect-W6100-to-ESP32_S2S3C3)
 * [Examples](#examples)
   * [ConfigOnSwitch](examples/ConfigOnSwitch)
   * [ConfigOnSwitchFS](examples/ConfigOnSwitchFS)
@@ -1825,7 +1825,7 @@ ESP32_EMParameter custom_mqtt_server("server", "mqtt server", "iot.eclipse", 40,
 ---
 ---
 
-### How to connect W6100 to ESP32_S3
+### How to connect W6100 to ESP32_S2/S3/C3
 
 You can change the `INT` pin to another one. Default is `GPIO4`
 
@@ -1858,7 +1858,6 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 </p> 
 
 ---
-
 
 
 #### W6100
