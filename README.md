@@ -1834,8 +1834,16 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 #define INT_GPIO            4
 ```
 
-
 ---
+
+#### W6100
+
+<p align="center">
+    <img src="https://github.com/khoih-prog/ESP32_SC_W6100_Manager/raw/main/Images/W6100.png">
+</p>
+ 
+---
+
 
 #### ESP32S3_DEV
 
@@ -1844,11 +1852,38 @@ You can change the `INT` pin to another one. Default is `GPIO4`
 </p> 
 
 
+|W6100|<--->|ESP32_S3|
+|:-:|:-:|:-:|
+|MOSI|<--->|GPIO11|
+|MISO|<--->|GPIO13|
+|SCK|<--->|GPIO12|
+|CS/SS|<--->|GPIO10|
+|INT|<--->|GPIO4|
+|RST|<--->|RST|
+|GND|<--->|GND|
+|3.3V|<--->|3.3V|
+
+---
+
 #### ESP32S2_DEV
 
 <p align="center">
     <img src="https://github.com/khoih-prog/ESP32_SC_W6100_Manager/raw/main/Images/ESP32S2_DEV.png">
 </p> 
+
+
+|W6100|<--->|ESP32_S2|
+|:-:|:-:|:-:|
+|MOSI|<--->|GPIO35|
+|MISO|<--->|GPIO37|
+|SCK|<--->|GPIO36|
+|CS/SS|<--->|GPIO34|
+|INT|<--->|GPIO4|
+|RST|<--->|RST|
+|GND|<--->|GND|
+|3.3V|<--->|3.3V|
+
+---
 
 
 #### ESP32C3_DEV
@@ -1857,30 +1892,14 @@ You can change the `INT` pin to another one. Default is `GPIO4`
     <img src="https://github.com/khoih-prog/ESP32_SC_W6100_Manager/raw/main/Images/ESP32_C3_DevKitC_02.png">
 </p> 
 
----
 
-
-#### W6100
-
-`FULL_DUPLEX, 100Mbps`
-
-<p align="center">
-    <img src="https://github.com/khoih-prog/ESP32_SC_W6100_Manager/raw/main/Images/W6100.png">
-</p>
- 
-<p align="center">
-    <img src="https://github.com/khoih-prog/ESP32_SC_W6100_Manager/raw/main/Images/W6100_small.png">
-</p> 
- 
-
-
-|W6100|<--->|ESP32_S3|
+|W6100|<--->|ESP32_C3|
 |:-:|:-:|:-:|
-|MOSI|<--->|GPIO11|
-|MISO|<--->|GPIO13|
-|SCK|<--->|GPIO12|
-|SS|<--->|GPIO10|
-|INT|<--->|GPIO4|
+|MOSI|<--->|GPIO6|
+|MISO|<--->|GPIO5|
+|SCK|<--->|GPIO4|
+|CS/SS|<--->|GPIO7|
+|INT|<--->|GPIO10|
 |RST|<--->|RST|
 |GND|<--->|GND|
 |3.3V|<--->|3.3V|
